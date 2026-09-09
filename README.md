@@ -85,6 +85,10 @@ I assign the same score to all DWAs within an IWA. Task ratings can lag changes 
 
 [data/rubric/PROMPT.md](data/rubric/PROMPT.md) documents the elicitation; I did not record sampling settings or run repeated trials.
 
+### Physical-task robustness
+
+I also set tasks linked to selected physical O*NET activity categories to zero, keeping their weights. A narrow rule covers physical activities and handling objects; a broad rule adds machines and vehicles. Spearman correlations with AIOE are 0.8857 and 0.8841, versus 0.8851 originally, on the same 683 occupations. Models remains at 0.6155 because its posing and styling tasks map to a promotional category. See the [rules, audit files, and comparison plot](results/robustness/README.md).
+
 ## Project structure
 
 ```text
@@ -97,10 +101,12 @@ scripts/
   02_hybrid_exposure.py   Published-measure comparison and hybrid estimates
   03_results.py          Summary statistics and HTML reports
   04_figure.py           Task exposure versus AIOE scatter plot
+  05_physical_robustness.py  Physical-task override sensitivity checks
 results/
   task/                  Task model tables and Job Zone summary
   hybrid/                Hybrid scores and matched comparison
   reports/               Two self-contained HTML reports
+  robustness/            Physical-task override estimates, audit, and figure
   summary.csv            Headline statistics
 ```
 
@@ -118,6 +124,7 @@ python scripts/01_task_exposure.py
 python scripts/02_hybrid_exposure.py
 python scripts/03_results.py
 python scripts/04_figure.py
+python scripts/05_physical_robustness.py
 ```
 
 On Windows, activate with `.venv\Scripts\activate`. Run scripts in numerical order. They read local inputs and overwrite their outputs, with no API keys or network calls. CSV estimates use four decimal places; summary statistics use those saved estimates.
