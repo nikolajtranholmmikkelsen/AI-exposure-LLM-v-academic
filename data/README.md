@@ -5,7 +5,7 @@ I preserve source files without modification and save derived tables in `../resu
 | Folder | Source and role |
 | --- | --- |
 | `onet/` | O*NET 30.3, May 2026. I keep the six required workbooks and Read Me at the top level, and the remainder of the O*NET 30.3 release in `onet/unused/` for possible later work. [Release archive](https://www.onetcenter.org/db_releases.html), [30.3 dictionary](https://www.onetcenter.org/dictionary/30.3/excel/). |
-| `felten/` | Local snapshot of [AIOE-Data/AIOE](https://github.com/AIOE-Data/AIOE), including its original README. Download date and upstream commit were not recorded. |
+| `felten/` | Local snapshot of [AIOE-Data/AIOE](https://github.com/AIOE-Data/AIOE), including its original README. I downloaded this snapshot in early July 2026. |
 | `rubric/` | `iwa_exposure_scores.csv`: saved judgments elicited from Claude Fable for 332 unique IWA identifiers, with exposure scores and channel labels. I document the elicitation in [PROMPT.md](rubric/PROMPT.md). |
 
 ## Claude judgments
@@ -18,7 +18,7 @@ O*NET: `GWAs to IWAs to DWAs.xlsx`, `Tasks to DWAs.xlsx`, `Task Statements.xlsx`
 
 Felten: `AIOE_DataAppendix.xlsx` (Appendix A for occupation scores; Appendix E for ability scores) and `Language Modeling AIOE and AIIE.xlsx` (LM AIOE sheet). The image-generation workbook is retained but not used. Local `Input/`, `Generative AI/`, and the paper PDF are reference materials, excluded from Git and unnecessary for the Python analysis. Upstream Stata scripts remain with their source snapshot; I use the Python scripts for estimation.
 
-If restoring inputs, download O*NET version **30.3**, not the latest release, and place only the six required workbooks listed above and `Read Me.txt` directly in `onet/`. Put all remaining workbooks in `onet/unused/`. Obtain the two required AIOE workbooks from the authors' repository and place them directly in `felten/`. An updated upstream file may change the results because the original download did not record a commit identifier.
+If restoring inputs, download O*NET version **30.3**, not the latest release, and place only the six required workbooks listed above and `Read Me.txt` directly in `onet/`. Put all remaining workbooks in `onet/unused/`. Obtain the two required AIOE workbooks from the authors' repository and place them directly in `felten/`. A later upstream revision may change the results, so compare against the July 2026 snapshot if estimates differ.
 
 ## Attribution and redistribution
 

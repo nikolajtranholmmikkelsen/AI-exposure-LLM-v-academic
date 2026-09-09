@@ -83,13 +83,11 @@ A score of 0.8 is an exposure index, not an 80% replacement probability or an 80
 
 I assign the same score to all DWAs within an IWA. Task ratings can lag changes in work, and exact SOC matching can miss classification changes. The hybrid depends partly on its imposed scaling. I have not tested uncertainty, other LLMs, or sensitivity to prompts, scores, and blend weights.
 
-[data/rubric/PROMPT.md](data/rubric/PROMPT.md) documents the elicitation; I did not record sampling settings or run repeated trials.
+[data/rubric/PROMPT.md](data/rubric/PROMPT.md) summarizes the instruction and rubric, not the exact prompt text; I did not record sampling settings or run repeated trials.
 
 ### Physical-task robustness
 
-I also set tasks linked to selected physical O*NET activity categories to zero, keeping their weights. A narrow rule covers physical activities and handling objects; a broad rule adds machines and vehicles. Spearman correlations with AIOE are 0.8857 and 0.8841, versus 0.8851 originally, on the same 683 occupations. Models remains at 0.6155 because its posing and styling tasks map to a promotional category. See the [rules, audit files, and comparison plot](results/robustness/README.md).
-
-I add a separate [task-language check](results/text_robustness/README.md), with a published pattern list and every match exported. Text alone gives Spearman 0.8850; combined with the broad hierarchy it gives 0.8833. I accept false positives such as “apply” in computer-based tasks and false negatives from unlisted wording. I chose these exploratory rules after inspecting Models, so its decline to 0.2879 does not validate them.
+I checked whether the comparison is sensitive to zeroing tasks linked to physical O*NET activity categories under a narrow and a broad rule; the Spearman correlation with AIOE stays within 0.002 of 0.885 on the same 683 occupations. I designed these checks after noticing the Models outlier in the figure, so they are exploratory and not independent of that observation. See the [hierarchy checks](results/robustness/README.md) and [task-language checks](results/text_robustness/README.md) for the rules, audit files, and figures.
 
 ## Project structure
 

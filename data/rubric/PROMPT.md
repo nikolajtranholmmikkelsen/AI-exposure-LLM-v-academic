@@ -1,6 +1,6 @@
-# Claude Fable elicitation
+# Claude Fable elicitation: instruction and rubric
 
-I queried Claude Fable around July 23rd 2026. I asked the model to classify each of 332 O*NET Intermediate Work Activities using the exposure rubric below, assessing the share of an activity that AI could perform or substantially assist with mid-2026 language, multimodal, and software-agent capabilities.
+I did not save the exact prompt text. I queried Claude Fable around July 23rd 2026. I asked it to classify each of the 332 O*NET Intermediate Work Activities against the rubric below, assessing the share of an activity that AI could perform or substantially assist with mid-2026 language, multimodal, and software-agent capabilities.
 
 | Score | Rubric interpretation |
 | --- | --- |
