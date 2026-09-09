@@ -1,14 +1,16 @@
- # AI exposure: early research measures versus modern LLM judgments
+# AI exposure: early research measures versus modern LLM judgments
 
-This project asks what happens when we assess occupational AI exposure by simply asking a modern large language model, rather than constructing a measure through an earlier research framework. It compares judgments elicited from **Claude Fable** with the AI Occupational Exposure (AIOE) measure of Felten, Raj, and Seamans (2021), developed before the current wave of general-purpose LLMs.
+I compare occupational AI exposure judgments from **Claude Fable** with the AI Occupational Exposure (AIOE) measure of Felten, Raj, and Seamans (2021). I asked Claude to score 332 O*NET Intermediate Work Activities, then used O*NET crosswalks and task weights to estimate exposure for 923 occupations. I also compare the scores with published language-modeling AIOE and explore a 50/50 hybrid.
 
-Claude Fable was asked to judge the AI exposure of each of 332 O*NET Intermediate Work Activities. These saved judgments are the rubric input; they are not human analyst ratings. O*NET crosswalks and task weights translate them into exposure scores for 923 occupations. The central comparison is between those LLM-derived scores and Felten's earlier researcher-designed measure, which links AI applications to human abilities using survey-based mappings. Published language-modeling AIOE provides an additional benchmark; a 50/50 hybrid is a secondary exploration of combining the two approaches.
+Claude judges work activities; Felten's earlier measure links AI applications to human abilities through survey-based mappings. My comparison captures differences in judgment source, measurement design, and capability vintage.
 
-Both approaches address the same broad question—how exposed is an occupation to AI?—but operationalize it differently. Claude judges work activities, whereas Felten's measure works through abilities. The comparison therefore combines differences in judgment source, measurement design, and capability vintage. It does not isolate a pure LLM-versus-human effect or estimate AI's causal labor-market effects.
+![Task exposure versus Felten AIOE](results/reports/exposure_vs_aioe.png)
+
+I compare 683 matched occupations; labels mark the eight largest absolute rank gaps.
 
 ## Main findings
 
-The Claude-derived task model covers 18,796 tasks. Mean occupational exposure is **0.485** on a 0–1 scale, with a standard deviation of **0.208**. These statistics weight occupations equally, not by employment.
+My Claude-derived task model covers 18,796 tasks. Mean occupational exposure is **0.485** on a 0–1 scale, with a standard deviation of **0.208**. I weight occupations equally, not by employment.
 
 | Result | Estimate | Interpretation |
 | --- | ---: | --- |
@@ -19,19 +21,19 @@ The Claude-derived task model covers 18,796 tasks. Mean occupational exposure is
 | Hybrid standard deviation | 0.179 | The blend compresses the distribution relative to the task model |
 | Task–hybrid Pearson correlation | 0.981 | Broad ordering is stable, with meaningful changes for some occupations |
 
-Information-processing occupations rank highly: medical transcriptionists score 0.889, credit analysts 0.843, and bookkeeping clerks 0.842. Physical occupations score much lower: roofers score 0.083, stonemasons 0.051, and dishwashers 0.050.
+Medical transcriptionists score 0.889, credit analysts 0.843, and bookkeeping clerks 0.842. Roofers score 0.083, stonemasons 0.051, and dishwashers 0.050.
 
-Average exposure rises from Job Zone 2 (0.324) through Zone 3 (0.470) to Zone 4 (0.656), then falls in Zone 5 (0.601). Job Zones describe occupational preparation requirements. The pattern is consistent with substantial exposure in skilled information work and lower exposure in some highly trained hands-on professions; it does not establish education as a cause of exposure.
+Average exposure rises from Job Zone 2 (0.324) through Zone 3 (0.470) to Zone 4 (0.656), then falls in Zone 5 (0.601). Job Zones describe occupational preparation requirements; this pattern does not establish education as a cause of exposure.
 
-The hybrid raises oral and maxillofacial surgeons from 0.194 to 0.398, an increase of about 21.2 percentile points. This illustrates how an ability-based view can assign greater exposure to occupations whose execution still involves substantial physical work. Geographers move down about 15.6 percentile points.
+The hybrid raises oral and maxillofacial surgeons from 0.194 to 0.398, about 21.2 percentile points. Geographers move down about 15.6 percentile points.
 
-**Significance.** Directly eliciting judgments from Claude Fable produces occupational rankings that broadly resemble those from an earlier, researcher-designed exposure framework: the main rank correlation is 0.885. This suggests that an LLM can reproduce much of that occupational ordering through a comparatively simple elicitation approach. It does not show that Claude is more accurate, or that it independently discovered the same relationships. Disagreements may reflect newer capabilities, activity-versus-ability measurement, or model judgments; this design cannot separate those explanations. Both measures use O*NET, and the available record cannot rule out Claude having encountered the published research in training. No observed adoption, productivity, wage, or employment outcomes are used to test predictive accuracy.
+**Significance.** Directly eliciting judgments from Claude Fable produces occupational rankings that broadly resemble those from an earlier, researcher-designed exposure framework: the main rank correlation is 0.885. This suggests that an LLM can reproduce much of that ordering through a comparatively simple elicitation approach. It does not show that Claude is more accurate or independently discovered the same relationships. I cannot separate newer capabilities from differences in measurement or model judgment. Both measures use O*NET, and Claude may have encountered the research in training. I do not test predictive accuracy against adoption, productivity, wages, or employment.
 
 ## Methodology
 
 ### 1. Elicit Claude Fable judgments of work activities
 
-The project owner identifies the input rubric as the result of asking Claude Fable for its judgment of each of O*NET's 332 Intermediate Work Activities (IWAs). Scores represent the model's assessments of the share of an activity that AI could perform or substantially assist, including language, multimodal, and software-agent capabilities. The existing scoring description frames capability as mid-2026; the exact elicitation date is not recorded in the retained files.
+I asked Claude Fable to classify 332 Intermediate Work Activities (IWAs) using this rubric, assessing the share AI could perform or substantially assist with mid-2026 language, multimodal, and software-agent capabilities.
 
 | Score | Rubric interpretation |
 | --- | --- |
@@ -41,13 +43,11 @@ The project owner identifies the input rubric as the result of asking Claude Fab
 | 0.15–0.40 | Limited assistance, often sensing or diagnosis |
 | 0.00–0.10 | Little exposure, typically embodied or manual activity |
 
-These are LLM judgments, not scores estimated from observed AI performance. Claude Fable is the model name supplied by the project owner; an exact version or API identifier, original prompt, sampling settings, raw responses, and repeated runs are not retained here. The table describes the saved scoring scale, not a verified transcript of the prompt. The saved judgments are available in full in [data/rubric/iwa_exposure_scores.csv](data/rubric/iwa_exposure_scores.csv).
+The [saved scores](data/rubric/iwa_exposure_scores.csv) are Claude's judgments, not measured AI performance.
 
 ### 2. Map activities to tasks and occupations
 
-Each of 2,087 Detailed Work Activities (DWAs) inherits its parent IWA score. A task's score is the arithmetic mean across its linked DWAs. All 18,796 task statements are mapped.
-
-For occupation `o`, exposure is:
+Each of 2,087 Detailed Work Activities (DWAs) inherits its parent IWA score. I average linked DWA scores for each task, covering all 18,796 task statements, then aggregate for occupation `o`:
 
 ```text
 task_score(t) = mean(score of each DWA linked to t)
@@ -55,33 +55,35 @@ weight(t) = importance(t) × relevance(t) / 100
 exposure(o) = sum(weight(t) × task_score(t)) / sum(weight(t))
 ```
 
-Importance uses O*NET's 1–5 scale and relevance its 0–100 scale. Missing importance defaults to 3. Missing relevance defaults to 100 for Core tasks, 50 for Supplemental tasks, and 75 for other task types. These defaults are assumptions, not imputations estimated from data.
+Importance uses O*NET's 1–5 scale; relevance uses 0–100. I default missing importance to 3 and missing relevance to 100 for Core tasks, 50 for Supplemental tasks, and 75 otherwise.
 
-The model also reports the share of task weight with exposure at least 0.70 or at most 0.30. Channel shares describe task weight assigned to each task's most frequent linked DWA channel; alphabetical ordering resolves ties. They are not shares of exposure or worker time.
+I report task-weight shares with exposure at least 0.70 or at most 0.30. Channel shares use each task's most frequent DWA channel, breaking ties alphabetically. They measure task weight, not worker time.
 
 ### 3. Compare LLM-derived exposure with published research measures
 
-O*NET occupation codes are collapsed to six-digit SOC codes by taking the unweighted mean across detailed occupations. An exact code match with Felten's Appendix A yields 683 occupations. The comparison also adds the published language-modeling AIOE measure. This is a matched subset, not the full 923-occupation sample, and no historical SOC crosswalk is applied.
+I average detailed occupations into six-digit SOC codes and match 683 of the 923 occupations to Felten's Appendix A, without a historical SOC crosswalk. I also compare language-modeling AIOE.
 
-Pearson correlations compare score levels; Spearman correlations compare rankings. An additional `ensemble_z` averages task and AIOE z-scores standardized within the matched sample. This occupation-level ensemble is distinct from the hybrid below. Rank 1 indicates greatest exposure; exported comparison ranks truncate average ranks for ties, preserving the original convention. Correlations use the underlying scores.
+Pearson correlations compare levels; Spearman correlations compare rankings. `ensemble_z` averages task and AIOE z-scores within the matched sample. Rank 1 means greatest exposure; exported ranks truncate average ranks for ties. Correlations use underlying scores.
 
 ### 4. Explore a hybrid of LLM judgments and the research measure
 
-Felten's Appendix E supplies exposure for 52 abilities. O*NET's Abilities to Work Activities crosswalk maps those abilities to 41 Generalized Work Activities (GWAs). Each GWA receives the mean of its linked ability scores. The script harmonizes the Appendix E label “Visual Color Determination” to O*NET's “Visual Color Discrimination.”
+I map 52 abilities from Felten's Appendix E to 41 Generalized Work Activities (GWAs) using O*NET, averaging linked ability scores. I harmonize “Visual Color Determination” to “Visual Color Discrimination.”
 
-The GWA ability scores are linearly rescaled to match the mean and sample standard deviation of the rubric's GWA means, then clipped to [0, 1]. Each IWA receives:
+I rescale GWA ability scores to the mean and sample standard deviation of the rubric's GWA means, clip to [0, 1], then calculate:
 
 ```text
 hybrid_iwa = 0.5 × rubric_iwa + 0.5 × rescaled_ability_score(parent_GWA)
 ```
 
-The same task mapping and importance–relevance aggregation produce hybrid occupational scores. The hybrid is a secondary analysis, not the primary test of agreement between Claude and Felten. The 50/50 weight is a modeling choice, not an estimated optimum. Rescaling aligns numerical scales; it does not calibrate the result as an automation probability.
+I apply the same task mapping and weighting. The 50/50 blend is a secondary exploration, not an estimated optimum.
 
 ## Interpretation and limitations
 
-A score of 0.8 is an exposure index under the rubric, not an 80% probability of replacement or a measured 80% reduction in labor hours. The analysis does not distinguish augmentation from substitution, model adoption costs, or estimate net employment effects.
+A score of 0.8 is an exposure index, not an 80% replacement probability or an 80% reduction in labor hours. I do not separate augmentation from substitution, model adoption costs, or estimate net employment effects.
 
-All DWAs within an IWA receive the same score, losing differences in context and difficulty. Task ratings can lag changes in work. Exact SOC matching excludes unmatched occupations and can miss classification changes. The hybrid mixes different capability vintages and partly reflects its imposed scaling. The saved Claude judgments come from an elicitation process whose prompt and settings are not archived. There are no repeated-run stability estimates, comparisons across LLMs, uncertainty intervals, or sensitivity analyses over prompts, activity scores, and blend weights. Archiving the elicitation and testing its reproducibility are central next steps before stronger claims about LLM-based measurement.
+I assign the same score to all DWAs within an IWA. Task ratings can lag changes in work, and exact SOC matching can miss classification changes. The hybrid depends partly on its imposed scaling. I have not tested uncertainty, other LLMs, or sensitivity to prompts, scores, and blend weights.
+
+[data/rubric/PROMPT.md](data/rubric/PROMPT.md) documents the elicitation; I did not record sampling settings or run repeated trials.
 
 ## Project structure
 
@@ -89,11 +91,12 @@ All DWAs within an IWA receive the same score, losing differences in context and
 data/
   onet/                  O*NET 30.3 source workbooks
   felten/                Published AIOE source material
-  rubric/                Saved Claude Fable activity judgments
+  rubric/                Claude Fable scores and PROMPT.md
 scripts/
   01_task_exposure.py     Activity-to-task-to-occupation estimates
   02_hybrid_exposure.py   Published-measure comparison and hybrid estimates
   03_results.py          Summary statistics and HTML reports
+  04_figure.py           Task exposure versus AIOE scatter plot
 results/
   task/                  Task model tables and Job Zone summary
   hybrid/                Hybrid scores and matched comparison
@@ -101,11 +104,11 @@ results/
   summary.csv            Headline statistics
 ```
 
-See [data/README.md](data/README.md) for source provenance, required inputs, and attribution.
+See [data/README.md](data/README.md) for inputs and attribution.
 
 ## Reproduce the results
 
-Tested with Python 3.14.6 and the package versions in `requirements.txt`. From the project root:
+I tested with Python 3.14.6 and the versions in `requirements.txt`. From the project root:
 
 ```bash
 python3 -m venv .venv
@@ -114,9 +117,14 @@ python -m pip install -r requirements.txt
 python scripts/01_task_exposure.py
 python scripts/02_hybrid_exposure.py
 python scripts/03_results.py
+python scripts/04_figure.py
 ```
 
-On Windows, activate with `.venv\Scripts\activate`. Run scripts in numerical order. Paths are resolved from the script locations, so execution does not otherwise depend on the working directory. The scripts read local inputs and overwrite their corresponding results. They reproduce the downstream analysis from saved Claude Fable judgments; they do not call Claude or reproduce the original elicitation. No API keys or network calls are needed for the analysis. CSV estimates are exported to four decimal places; summary statistics are calculated from those saved estimates and may differ slightly from calculations using full precision.
+On Windows, activate with `.venv\Scripts\activate`. Run scripts in numerical order. They read local inputs and overwrite their outputs, with no API keys or network calls. CSV estimates use four decimal places; summary statistics use those saved estimates.
+
+### Run the checks
+
+`python -m pytest tests/`
 
 ## Results files
 
@@ -131,9 +139,9 @@ On Windows, activate with `.venv\Scripts\activate`. Run scripts in numerical ord
 | [Hybrid activity scores](results/hybrid/iwa_scores_hybrid.csv) | Claude score, rescaled ability channel, and blended score |
 | [Summary statistics](results/summary.csv) | Coverage, means, standard deviations, and correlations |
 
-The [task report](results/reports/ai-exposure-report.html) and [comparison report](results/reports/exposure-comparison.html) can be downloaded and opened in a browser. GitHub's file view displays HTML source. Reports require no external assets.
+Open the [task report](results/reports/ai-exposure-report.html) and [comparison report](results/reports/exposure-comparison.html) locally in a browser. They need no external assets; GitHub displays their source.
 
-Exposure and percentile fields use fractions, with higher values indicating greater exposure. `delta` is hybrid minus original exposure; `rank_gap` is task rank minus AIOE rank, so a positive value means AIOE ranks the occupation higher. Channels are INFO (information), ANLY (analysis), CRTV (creative), TECH (technical), SOCL (social), MGMT (management), CARE (care), PHYS (physical), and MACH (machinery).
+Exposure and percentiles are fractions, increasing with exposure. `delta` is hybrid minus original; `rank_gap` is task rank minus AIOE rank, positive when AIOE ranks higher. Channels: INFO (information), ANLY (analysis), CRTV (creative), TECH (technical), SOCL (social), MGMT (management), CARE (care), PHYS (physical), MACH (machinery).
 
 ## Sources and reuse
 
@@ -143,4 +151,4 @@ Felten, E., Raj, M., & Seamans, R. (2023). How will Language Modelers like ChatG
 
 This project incorporates information from the O*NET 30.3 Database, U.S. Department of Labor, Employment and Training Administration (USDOL/ETA), licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). O*NET® is a trademark of USDOL/ETA. The exposure scores and aggregations are project adaptations; USDOL/ETA has not approved, endorsed, or tested them.
 
-No license has yet been selected for this project's original code and rubric. Third-party materials retain their own terms. The local AIOE snapshot contains no explicit license file; its README requests citation. Confirm redistribution terms before publishing those workbooks or offering reuse rights for derived AIOE outputs. The reference PDF and unused upstream replication folders are retained locally but excluded from Git.
+The code and rubric in this repo are [MIT licensed](LICENSE). O*NET data are CC BY 4.0 as attributed above. The Felten, Raj and Seamans workbooks are included as downloaded from the authors' public repository, which requests citation, and remain under the authors' terms.
