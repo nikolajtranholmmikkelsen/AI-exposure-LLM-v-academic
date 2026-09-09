@@ -1,0 +1,13 @@
+statistic,value
+occupations,923.0
+tasks,18796.0
+matched_soc6,683.0
+matched_lm_soc6,683.0
+task_mean,0.484861
+task_sd,0.207823
+hybrid_mean,0.471875
+hybrid_sd,0.179325
+task_aioe_pearson,0.888626
+task_aioe_spearman,0.885099
+task_lm_spearman,0.879234
+task_hybrid_pearson,0.980516

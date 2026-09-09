@@ -1,0 +1,349 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Claude Fable judgments versus Felten AIOE</title><style>
+body{font:16px/1.6 system-ui,sans-serif;color:#20252b;max-width:1000px;margin:48px auto;padding:0 24px}
+h1,h2{line-height:1.25}h2{margin-top:40px}p{max-width:85ch}a{color:#245d83}
+table{border-collapse:collapse;width:100%;font-size:14px;margin:20px 0}
+th,td{padding:8px 12px;border-bottom:1px solid #ddd;text-align:right}
+th:first-child,td:first-child{text-align:left}nav{margin-bottom:32px}
+.table{overflow-x:auto}
+</style><body><nav><a href="ai-exposure-report.html">Claude-derived exposure</a> · <a href="exposure-comparison.html">Comparison</a> · <a href="../../README.md">Research README</a></nav><h1>Claude Fable judgments versus Felten AIOE</h1><p>O*NET 30.3; 923 occupations and 18,796 tasks. Activity scores are saved Claude Fable judgments, as identified by the project owner, using the project’s mid-2026 capability framing. Exposure measures capability overlap, not employment loss or observed adoption.</p><p>Task scores are importance × relevance weighted means on a 0–1 scale. The main comparison asks how modern LLM judgments compare with Felten’s earlier researcher-designed exposure measure. The secondary hybrid blends Claude judgments and rescaled ability exposure equally. Correlations describe agreement on matched occupations, not predictive accuracy or a pure LLM-versus-human effect: the approaches differ in measurement unit and capability vintage. Percentile changes are fractions of the ranking distribution; 0.10 means ten percentile points.</p><p>The original Claude prompt, exact version, settings, and raw responses are not archived. These reports reproduce analysis from the saved judgments, not the elicitation. Shared O*NET inputs and possible model familiarity with the research mean agreement is not independent validation.</p><h2>Comparison statistics</h2><div class="table"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>statistic</th>
+      <th>value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>occupations</td>
+      <td>923.000</td>
+    </tr>
+    <tr>
+      <td>tasks</td>
+      <td>18796.000</td>
+    </tr>
+    <tr>
+      <td>matched_soc6</td>
+      <td>683.000</td>
+    </tr>
+    <tr>
+      <td>matched_lm_soc6</td>
+      <td>683.000</td>
+    </tr>
+    <tr>
+      <td>task_mean</td>
+      <td>0.485</td>
+    </tr>
+    <tr>
+      <td>task_sd</td>
+      <td>0.208</td>
+    </tr>
+    <tr>
+      <td>hybrid_mean</td>
+      <td>0.472</td>
+    </tr>
+    <tr>
+      <td>hybrid_sd</td>
+      <td>0.179</td>
+    </tr>
+    <tr>
+      <td>task_aioe_pearson</td>
+      <td>0.889</td>
+    </tr>
+    <tr>
+      <td>task_aioe_spearman</td>
+      <td>0.885</td>
+    </tr>
+    <tr>
+      <td>task_lm_spearman</td>
+      <td>0.879</td>
+    </tr>
+    <tr>
+      <td>task_hybrid_pearson</td>
+      <td>0.981</td>
+    </tr>
+  </tbody>
+</table></div><h2>Ability measure ranks higher</h2><div class="table"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>title</th>
+      <th>task_rank</th>
+      <th>aioe_rank</th>
+      <th>rank_gap</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Marriage and Family Therapists</td>
+      <td>315</td>
+      <td>44</td>
+      <td>271</td>
+    </tr>
+    <tr>
+      <td>Manicurists and Pedicurists</td>
+      <td>582</td>
+      <td>320</td>
+      <td>262</td>
+    </tr>
+    <tr>
+      <td>Mental Health Counselors</td>
+      <td>320</td>
+      <td>64</td>
+      <td>256</td>
+    </tr>
+    <tr>
+      <td>Dental Laboratory Technicians</td>
+      <td>580</td>
+      <td>324</td>
+      <td>256</td>
+    </tr>
+    <tr>
+      <td>Prosthodontists</td>
+      <td>579</td>
+      <td>348</td>
+      <td>231</td>
+    </tr>
+    <tr>
+      <td>Judges, Magistrate Judges, and Magistrates</td>
+      <td>236</td>
+      <td>6</td>
+      <td>230</td>
+    </tr>
+    <tr>
+      <td>Musical Instrument Repairers and Tuners</td>
+      <td>646</td>
+      <td>423</td>
+      <td>223</td>
+    </tr>
+    <tr>
+      <td>Oral and Maxillofacial Surgeons</td>
+      <td>585</td>
+      <td>365</td>
+      <td>220</td>
+    </tr>
+    <tr>
+      <td>Hearing Aid Specialists</td>
+      <td>463</td>
+      <td>244</td>
+      <td>219</td>
+    </tr>
+    <tr>
+      <td>Neuropsychologists</td>
+      <td>249</td>
+      <td>33</td>
+      <td>216</td>
+    </tr>
+  </tbody>
+</table></div><h2>Task measure ranks higher</h2><div class="table"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>title</th>
+      <th>task_rank</th>
+      <th>aioe_rank</th>
+      <th>rank_gap</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Models</td>
+      <td>212</td>
+      <td>582</td>
+      <td>-370</td>
+    </tr>
+    <tr>
+      <td>Exercise Trainers and Group Fitness Instructors</td>
+      <td>337</td>
+      <td>682</td>
+      <td>-345</td>
+    </tr>
+    <tr>
+      <td>Choreographers</td>
+      <td>306</td>
+      <td>648</td>
+      <td>-342</td>
+    </tr>
+    <tr>
+      <td>Gambling Change Persons and Booth Cashiers</td>
+      <td>22</td>
+      <td>331</td>
+      <td>-309</td>
+    </tr>
+    <tr>
+      <td>Meter Readers, Utilities</td>
+      <td>242</td>
+      <td>542</td>
+      <td>-300</td>
+    </tr>
+    <tr>
+      <td>Desktop Publishers</td>
+      <td>10</td>
+      <td>273</td>
+      <td>-263</td>
+    </tr>
+    <tr>
+      <td>Adapted Physical Education Specialists</td>
+      <td>202</td>
+      <td>453</td>
+      <td>-251</td>
+    </tr>
+    <tr>
+      <td>Tellers</td>
+      <td>8</td>
+      <td>257</td>
+      <td>-249</td>
+    </tr>
+    <tr>
+      <td>Surveying and Mapping Technicians</td>
+      <td>64</td>
+      <td>307</td>
+      <td>-243</td>
+    </tr>
+    <tr>
+      <td>Cashiers</td>
+      <td>137</td>
+      <td>368</td>
+      <td>-231</td>
+    </tr>
+  </tbody>
+</table></div><h2>Largest hybrid percentile increases</h2><div class="table"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Title</th>
+      <th>original_exposure</th>
+      <th>hybrid_exposure</th>
+      <th>percentile_change</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Oral and Maxillofacial Surgeons</td>
+      <td>0.194</td>
+      <td>0.398</td>
+      <td>0.212</td>
+    </tr>
+    <tr>
+      <td>Surgical Assistants</td>
+      <td>0.180</td>
+      <td>0.330</td>
+      <td>0.158</td>
+    </tr>
+    <tr>
+      <td>Farmworkers, Farm, Ranch, and Aquacultural Animals</td>
+      <td>0.160</td>
+      <td>0.290</td>
+      <td>0.137</td>
+    </tr>
+    <tr>
+      <td>Musicians and Singers</td>
+      <td>0.251</td>
+      <td>0.390</td>
+      <td>0.134</td>
+    </tr>
+    <tr>
+      <td>Anesthesiologist Assistants</td>
+      <td>0.240</td>
+      <td>0.377</td>
+      <td>0.133</td>
+    </tr>
+    <tr>
+      <td>Surgical Technologists</td>
+      <td>0.218</td>
+      <td>0.339</td>
+      <td>0.124</td>
+    </tr>
+    <tr>
+      <td>Actors</td>
+      <td>0.305</td>
+      <td>0.440</td>
+      <td>0.115</td>
+    </tr>
+    <tr>
+      <td>Home Health Aides</td>
+      <td>0.283</td>
+      <td>0.401</td>
+      <td>0.111</td>
+    </tr>
+    <tr>
+      <td>Paramedics</td>
+      <td>0.333</td>
+      <td>0.458</td>
+      <td>0.106</td>
+    </tr>
+    <tr>
+      <td>Prosthodontists</td>
+      <td>0.198</td>
+      <td>0.306</td>
+      <td>0.105</td>
+    </tr>
+  </tbody>
+</table></div><h2>Largest hybrid percentile decreases</h2><div class="table"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Title</th>
+      <th>original_exposure</th>
+      <th>hybrid_exposure</th>
+      <th>percentile_change</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Geographers</td>
+      <td>0.639</td>
+      <td>0.546</td>
+      <td>-0.156</td>
+    </tr>
+    <tr>
+      <td>Sound Engineering Technicians</td>
+      <td>0.597</td>
+      <td>0.507</td>
+      <td>-0.152</td>
+    </tr>
+    <tr>
+      <td>Data Entry Keyers</td>
+      <td>0.703</td>
+      <td>0.611</td>
+      <td>-0.145</td>
+    </tr>
+    <tr>
+      <td>Historians</td>
+      <td>0.701</td>
+      <td>0.612</td>
+      <td>-0.134</td>
+    </tr>
+    <tr>
+      <td>Gambling Cage Workers</td>
+      <td>0.653</td>
+      <td>0.574</td>
+      <td>-0.125</td>
+    </tr>
+    <tr>
+      <td>Broadcast Technicians</td>
+      <td>0.530</td>
+      <td>0.458</td>
+      <td>-0.117</td>
+    </tr>
+    <tr>
+      <td>Demonstrators and Product Promoters</td>
+      <td>0.574</td>
+      <td>0.510</td>
+      <td>-0.113</td>
+    </tr>
+    <tr>
+      <td>Graphic Designers</td>
+      <td>0.718</td>
+      <td>0.626</td>
+      <td>-0.110</td>
+    </tr>
+    <tr>
+      <td>Remote Sensing Technicians</td>
+      <td>0.655</td>
+      <td>0.579</td>
+      <td>-0.110</td>
+    </tr>
+    <tr>
+      <td>Models</td>
+      <td>0.624</td>
+      <td>0.550</td>
+      <td>-0.107</td>
+    </tr>
+  </tbody>
+</table></div><p>Generated by scripts/03_results.py. See the research README for assumptions, source attribution, and output definitions.</p></body></html>

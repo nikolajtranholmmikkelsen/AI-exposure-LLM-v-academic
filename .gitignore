@@ -1,0 +1,15 @@
+# Local environments and editor settings
+.venv/
+.claude/
+.codex/
+.agents/
+.DS_Store
+__pycache__/
+*.py[cod]
+.env
+.env.*
+
+# Local third-party reference materials; obtain from the sources in data/README.md
+data/felten/*.pdf
+data/felten/Input/
+data/felten/Generative AI/

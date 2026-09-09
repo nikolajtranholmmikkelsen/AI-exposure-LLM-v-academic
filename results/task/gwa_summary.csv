@@ -1,0 +1,42 @@
+GWA Element Name,mean,min,max,n_iwas
+Scheduling Work and Activities,0.9,0.85,0.95,3
+Updating and Using Relevant Knowledge,0.85,0.85,0.85,1
+Documenting/Recording Information,0.8438,0.25,0.95,16
+Analyzing Data or Information,0.8417,0.7,0.9,12
+Working with Computers,0.825,0.7,0.95,6
+Developing Objectives and Strategies,0.8,0.75,0.85,2
+"Drafting, Laying Out, and Specifying Technical Devices, Parts, and Equipment",0.775,0.7,0.85,6
+Processing Information,0.76,0.15,0.95,5
+Interpreting the Meaning of Information for Others,0.74,0.55,0.8,5
+Getting Information,0.7348,0.45,0.95,23
+Thinking Creatively,0.7341,0.45,0.9,22
+"Organizing, Planning, and Prioritizing Work",0.725,0.7,0.75,2
+Making Decisions and Solving Problems,0.6727,0.45,0.95,11
+Performing Administrative Activities,0.6583,0.2,0.9,6
+Staffing Organizational Units,0.65,0.6,0.7,2
+"Monitoring Processes, Materials, or Surroundings",0.6318,0.4,0.9,11
+"Judging the Qualities of Objects, Services, or People",0.625,0.5,0.75,10
+Providing Consultation and Advice to Others,0.6136,0.3,0.75,11
+Evaluating Information to Determine Compliance with Standards,0.6125,0.15,0.85,4
+"Communicating with Supervisors, Peers, or Subordinates",0.565,0.45,0.7,10
+Communicating with People Outside the Organization,0.55,0.3,0.7,3
+Selling or Influencing Others,0.5333,0.45,0.65,3
+"Estimating the Quantifiable Characteristics of Products, Events, or Information",0.52,0.1,0.95,5
+Monitoring and Controlling Resources,0.5143,0.15,0.75,7
+Training and Teaching Others,0.5,0.4,0.55,6
+Coordinating the Work and Activities of Others,0.4929,0.15,0.65,7
+Resolving Conflicts and Negotiating with Others,0.45,0.35,0.5,3
+"Guiding, Directing, and Motivating Subordinates",0.4333,0.15,0.7,12
+"Identifying Objects, Actions, and Events",0.425,0.1,0.75,2
+Performing for or Working Directly with the Public,0.3667,0.15,0.75,3
+Coaching and Developing Others,0.35,0.35,0.35,1
+"Inspecting Equipment, Structures, or Materials",0.3417,0.2,0.85,12
+Developing and Building Teams,0.3,0.3,0.3,1
+Establishing and Maintaining Interpersonal Relationships,0.25,0.25,0.25,1
+Assisting and Caring for Others,0.2042,0.05,0.8,12
+Controlling Machines and Processes,0.1958,0.05,0.4,12
+"Operating Vehicles, Mechanized Devices, or Equipment",0.15,0.15,0.15,1
+Repairing and Maintaining Electronic Equipment,0.1167,0.1,0.15,3
+Repairing and Maintaining Mechanical Equipment,0.0667,0.05,0.1,6
+Handling and Moving Objects,0.0574,0.0,0.15,47
+Performing General Physical Activities,0.0529,0.0,0.15,17

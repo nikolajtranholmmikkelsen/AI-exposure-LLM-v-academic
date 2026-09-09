@@ -1,0 +1,333 @@
+iwa_id,GWA Element Name,exposure,gwa_aioe,hybrid,channel
+4.A.1.a.1.a,Getting Information,0.7,0.5508,0.6254,INFO
+4.A.1.a.1.b,Getting Information,0.95,0.5508,0.7504,INFO
+4.A.1.a.1.c,Getting Information,0.55,0.5508,0.5504,INFO
+4.A.1.a.1.d,Getting Information,0.75,0.5508,0.6504,INFO
+4.A.1.a.1.e,Getting Information,0.9,0.5508,0.7254,INFO
+4.A.1.a.1.f,Getting Information,0.8,0.5508,0.6754,INFO
+4.A.1.a.1.g,Getting Information,0.85,0.5508,0.7004,INFO
+4.A.1.a.1.h,Getting Information,0.8,0.5508,0.6754,INFO
+4.A.1.a.1.i,Getting Information,0.8,0.5508,0.6754,INFO
+4.A.1.a.1.j,Getting Information,0.65,0.5508,0.6004,INFO
+4.A.1.a.1.k,Getting Information,0.6,0.5508,0.5754,INFO
+4.A.1.a.1.l,Getting Information,0.55,0.5508,0.5504,INFO
+4.A.1.a.1.m,Getting Information,0.8,0.5508,0.6754,INFO
+4.A.1.a.1.n,Getting Information,0.75,0.5508,0.6504,INFO
+4.A.1.a.1.o,Getting Information,0.7,0.5508,0.6254,INFO
+4.A.1.a.1.p,Getting Information,0.7,0.5508,0.6254,INFO
+4.A.1.a.1.q,Getting Information,0.8,0.5508,0.6754,INFO
+4.A.1.a.1.r,Getting Information,0.9,0.5508,0.7254,INFO
+4.A.1.a.1.s,Getting Information,0.85,0.5508,0.7004,INFO
+4.A.1.a.1.t,Getting Information,0.85,0.5508,0.7004,INFO
+4.A.1.a.1.u,Getting Information,0.5,0.5508,0.5254,INFO
+4.A.1.a.1.v,Getting Information,0.7,0.5508,0.6254,INFO
+4.A.1.a.1.w,Getting Information,0.45,0.5508,0.5004,SOCL
+4.A.1.a.2.a,"Monitoring Processes, Materials, or Surroundings",0.55,0.6048,0.5774,MACH
+4.A.1.a.2.b,"Monitoring Processes, Materials, or Surroundings",0.6,0.6048,0.6024,INFO
+4.A.1.a.2.c,"Monitoring Processes, Materials, or Surroundings",0.9,0.6048,0.7524,ANLY
+4.A.1.a.2.d,"Monitoring Processes, Materials, or Surroundings",0.55,0.6048,0.5774,INFO
+4.A.1.a.2.e,"Monitoring Processes, Materials, or Surroundings",0.4,0.6048,0.5024,CARE
+4.A.1.a.2.f,"Monitoring Processes, Materials, or Surroundings",0.45,0.6048,0.5274,SOCL
+4.A.1.a.2.g,"Monitoring Processes, Materials, or Surroundings",0.45,0.6048,0.5274,PHYS
+4.A.1.a.2.h,"Monitoring Processes, Materials, or Surroundings",0.9,0.6048,0.7524,INFO
+4.A.1.a.2.i,"Monitoring Processes, Materials, or Surroundings",0.6,0.6048,0.6024,INFO
+4.A.1.a.2.j,"Monitoring Processes, Materials, or Surroundings",0.85,0.6048,0.7274,TECH
+4.A.1.a.2.k,"Monitoring Processes, Materials, or Surroundings",0.7,0.6048,0.6524,ANLY
+4.A.1.b.1.a,"Identifying Objects, Actions, and Events",0.1,0.6094,0.3547,PHYS
+4.A.1.b.1.b,"Identifying Objects, Actions, and Events",0.75,0.6094,0.6797,ANLY
+4.A.1.b.2.a,"Inspecting Equipment, Structures, or Materials",0.25,0.5315,0.3908,CARE
+4.A.1.b.2.b,"Inspecting Equipment, Structures, or Materials",0.6,0.5315,0.5658,ANLY
+4.A.1.b.2.c,"Inspecting Equipment, Structures, or Materials",0.3,0.5315,0.4158,PHYS
+4.A.1.b.2.d,"Inspecting Equipment, Structures, or Materials",0.2,0.5315,0.3658,PHYS
+4.A.1.b.2.e,"Inspecting Equipment, Structures, or Materials",0.2,0.5315,0.3658,PHYS
+4.A.1.b.2.f,"Inspecting Equipment, Structures, or Materials",0.3,0.5315,0.4158,PHYS
+4.A.1.b.2.g,"Inspecting Equipment, Structures, or Materials",0.25,0.5315,0.3908,PHYS
+4.A.1.b.2.h,"Inspecting Equipment, Structures, or Materials",0.85,0.5315,0.6908,TECH
+4.A.1.b.2.i,"Inspecting Equipment, Structures, or Materials",0.2,0.5315,0.3658,CARE
+4.A.1.b.2.j,"Inspecting Equipment, Structures, or Materials",0.3,0.5315,0.4158,PHYS
+4.A.1.b.2.k,"Inspecting Equipment, Structures, or Materials",0.3,0.5315,0.4158,PHYS
+4.A.1.b.2.l,"Inspecting Equipment, Structures, or Materials",0.35,0.5315,0.4408,PHYS
+4.A.1.b.3.a,"Estimating the Quantifiable Characteristics of Products, Events, or Information",0.2,0.5431,0.3716,PHYS
+4.A.1.b.3.b,"Estimating the Quantifiable Characteristics of Products, Events, or Information",0.8,0.5431,0.6716,ANLY
+4.A.1.b.3.c,"Estimating the Quantifiable Characteristics of Products, Events, or Information",0.95,0.5431,0.7466,ANLY
+4.A.1.b.3.d,"Estimating the Quantifiable Characteristics of Products, Events, or Information",0.55,0.5431,0.5466,ANLY
+4.A.1.b.3.e,"Estimating the Quantifiable Characteristics of Products, Events, or Information",0.1,0.5431,0.3216,CARE
+4.A.2.a.1.a,"Judging the Qualities of Objects, Services, or People",0.55,0.5945,0.5722,SOCL
+4.A.2.a.1.b,"Judging the Qualities of Objects, Services, or People",0.75,0.5945,0.6722,ANLY
+4.A.2.a.1.c,"Judging the Qualities of Objects, Services, or People",0.6,0.5945,0.5972,SOCL
+4.A.2.a.1.d,"Judging the Qualities of Objects, Services, or People",0.5,0.5945,0.5472,MGMT
+4.A.2.a.1.e,"Judging the Qualities of Objects, Services, or People",0.5,0.5945,0.5472,PHYS
+4.A.2.a.1.f,"Judging the Qualities of Objects, Services, or People",0.5,0.5945,0.5472,CARE
+4.A.2.a.1.g,"Judging the Qualities of Objects, Services, or People",0.65,0.5945,0.6222,ANLY
+4.A.2.a.1.h,"Judging the Qualities of Objects, Services, or People",0.75,0.5945,0.6722,ANLY
+4.A.2.a.1.i,"Judging the Qualities of Objects, Services, or People",0.7,0.5945,0.6472,ANLY
+4.A.2.a.1.j,"Judging the Qualities of Objects, Services, or People",0.75,0.5945,0.6722,ANLY
+4.A.2.a.2.a,Processing Information,0.9,0.6602,0.7801,ANLY
+4.A.2.a.2.b,Processing Information,0.15,0.6602,0.4051,PHYS
+4.A.2.a.2.c,Processing Information,0.95,0.6602,0.8051,INFO
+4.A.2.a.2.d,Processing Information,0.95,0.6602,0.8051,ANLY
+4.A.2.a.2.e,Processing Information,0.85,0.6602,0.7551,INFO
+4.A.2.a.3.a,Evaluating Information to Determine Compliance with Standards,0.85,0.6201,0.735,ANLY
+4.A.2.a.3.b,Evaluating Information to Determine Compliance with Standards,0.6,0.6201,0.61,ANLY
+4.A.2.a.3.c,Evaluating Information to Determine Compliance with Standards,0.85,0.6201,0.735,ANLY
+4.A.2.a.3.d,Evaluating Information to Determine Compliance with Standards,0.15,0.6201,0.385,CARE
+4.A.2.a.4.a,Analyzing Data or Information,0.85,0.7645,0.8072,ANLY
+4.A.2.a.4.b,Analyzing Data or Information,0.9,0.7645,0.8322,ANLY
+4.A.2.a.4.c,Analyzing Data or Information,0.9,0.7645,0.8322,ANLY
+4.A.2.a.4.d,Analyzing Data or Information,0.85,0.7645,0.8072,ANLY
+4.A.2.a.4.e,Analyzing Data or Information,0.8,0.7645,0.7822,ANLY
+4.A.2.a.4.f,Analyzing Data or Information,0.85,0.7645,0.8072,ANLY
+4.A.2.a.4.g,Analyzing Data or Information,0.85,0.7645,0.8072,ANLY
+4.A.2.a.4.h,Analyzing Data or Information,0.9,0.7645,0.8322,ANLY
+4.A.2.a.4.i,Analyzing Data or Information,0.85,0.7645,0.8072,ANLY
+4.A.2.a.4.j,Analyzing Data or Information,0.7,0.7645,0.7322,ANLY
+4.A.2.a.4.k,Analyzing Data or Information,0.9,0.7645,0.8322,ANLY
+4.A.2.a.4.l,Analyzing Data or Information,0.75,0.7645,0.7572,ANLY
+4.A.2.b.1.a,Making Decisions and Solving Problems,0.8,0.6515,0.7258,ANLY
+4.A.2.b.1.b,Making Decisions and Solving Problems,0.55,0.6515,0.6008,PHYS
+4.A.2.b.1.c,Making Decisions and Solving Problems,0.6,0.6515,0.6258,MGMT
+4.A.2.b.1.d,Making Decisions and Solving Problems,0.7,0.6515,0.6758,ANLY
+4.A.2.b.1.e,Making Decisions and Solving Problems,0.45,0.6515,0.5508,MGMT
+4.A.2.b.1.f,Making Decisions and Solving Problems,0.5,0.6515,0.5758,CARE
+4.A.2.b.1.g,Making Decisions and Solving Problems,0.95,0.6515,0.8008,INFO
+4.A.2.b.1.h,Making Decisions and Solving Problems,0.75,0.6515,0.7008,ANLY
+4.A.2.b.1.i,Making Decisions and Solving Problems,0.55,0.6515,0.6008,MGMT
+4.A.2.b.1.j,Making Decisions and Solving Problems,0.65,0.6515,0.6508,ANLY
+4.A.2.b.1.k,Making Decisions and Solving Problems,0.9,0.6515,0.7758,CRTV
+4.A.2.b.2.a,Thinking Creatively,0.6,0.5486,0.5743,CARE
+4.A.2.b.2.b,Thinking Creatively,0.85,0.5486,0.6993,TECH
+4.A.2.b.2.c,Thinking Creatively,0.8,0.5486,0.6743,CRTV
+4.A.2.b.2.d,Thinking Creatively,0.7,0.5486,0.6243,CRTV
+4.A.2.b.2.e,Thinking Creatively,0.75,0.5486,0.6493,CRTV
+4.A.2.b.2.f,Thinking Creatively,0.9,0.5486,0.7243,TECH
+4.A.2.b.2.g,Thinking Creatively,0.7,0.5486,0.6243,CRTV
+4.A.2.b.2.h,Thinking Creatively,0.8,0.5486,0.6743,CRTV
+4.A.2.b.2.i,Thinking Creatively,0.7,0.5486,0.6243,CRTV
+4.A.2.b.2.j,Thinking Creatively,0.9,0.5486,0.7243,CRTV
+4.A.2.b.2.k,Thinking Creatively,0.65,0.5486,0.5993,CRTV
+4.A.2.b.2.l,Thinking Creatively,0.75,0.5486,0.6493,CRTV
+4.A.2.b.2.m,Thinking Creatively,0.65,0.5486,0.5993,CRTV
+4.A.2.b.2.n,Thinking Creatively,0.65,0.5486,0.5993,CRTV
+4.A.2.b.2.o,Thinking Creatively,0.75,0.5486,0.6493,CRTV
+4.A.2.b.2.p,Thinking Creatively,0.75,0.5486,0.6493,CRTV
+4.A.2.b.2.q,Thinking Creatively,0.75,0.5486,0.6493,CRTV
+4.A.2.b.2.r,Thinking Creatively,0.8,0.5486,0.6743,CRTV
+4.A.2.b.2.s,Thinking Creatively,0.8,0.5486,0.6743,CRTV
+4.A.2.b.2.t,Thinking Creatively,0.45,0.5486,0.4993,CRTV
+4.A.2.b.2.u,Thinking Creatively,0.75,0.5486,0.6493,ANLY
+4.A.2.b.2.v,Thinking Creatively,0.7,0.5486,0.6243,MGMT
+4.A.2.b.3.a,Updating and Using Relevant Knowledge,0.85,0.6104,0.7302,INFO
+4.A.2.b.4.a,Developing Objectives and Strategies,0.75,0.5253,0.6376,MGMT
+4.A.2.b.4.b,Developing Objectives and Strategies,0.85,0.5253,0.6876,INFO
+4.A.2.b.5.a,Scheduling Work and Activities,0.9,0.783,0.8415,INFO
+4.A.2.b.5.b,Scheduling Work and Activities,0.85,0.783,0.8165,INFO
+4.A.2.b.5.c,Scheduling Work and Activities,0.95,0.783,0.8665,INFO
+4.A.2.b.6.a,"Organizing, Planning, and Prioritizing Work",0.7,0.7621,0.7311,MGMT
+4.A.2.b.6.b,"Organizing, Planning, and Prioritizing Work",0.75,0.7621,0.7561,MGMT
+4.A.3.a.1.a,Performing General Physical Activities,0.1,0.0,0.05,PHYS
+4.A.3.a.1.b,Performing General Physical Activities,0.05,0.0,0.025,PHYS
+4.A.3.a.1.c,Performing General Physical Activities,0.05,0.0,0.025,PHYS
+4.A.3.a.1.d,Performing General Physical Activities,0.05,0.0,0.025,PHYS
+4.A.3.a.1.e,Performing General Physical Activities,0.05,0.0,0.025,PHYS
+4.A.3.a.1.f,Performing General Physical Activities,0.05,0.0,0.025,PHYS
+4.A.3.a.1.g,Performing General Physical Activities,0.05,0.0,0.025,PHYS
+4.A.3.a.1.h,Performing General Physical Activities,0.05,0.0,0.025,PHYS
+4.A.3.a.1.i,Performing General Physical Activities,0.05,0.0,0.025,PHYS
+4.A.3.a.1.j,Performing General Physical Activities,0.05,0.0,0.025,PHYS
+4.A.3.a.1.k,Performing General Physical Activities,0.15,0.0,0.075,PHYS
+4.A.3.a.1.l,Performing General Physical Activities,0.05,0.0,0.025,PHYS
+4.A.3.a.1.m,Performing General Physical Activities,0.05,0.0,0.025,CARE
+4.A.3.a.1.n,Performing General Physical Activities,0.0,0.0,0.0,PHYS
+4.A.3.a.1.o,Performing General Physical Activities,0.05,0.0,0.025,PHYS
+4.A.3.a.1.p,Performing General Physical Activities,0.0,0.0,0.0,PHYS
+4.A.3.a.1.q,Performing General Physical Activities,0.05,0.0,0.025,PHYS
+4.A.3.a.2.a,Handling and Moving Objects,0.05,0.0,0.025,PHYS
+4.A.3.a.2.b,Handling and Moving Objects,0.1,0.0,0.05,PHYS
+4.A.3.a.2.c,Handling and Moving Objects,0.05,0.0,0.025,PHYS
+4.A.3.a.2.d,Handling and Moving Objects,0.05,0.0,0.025,PHYS
+4.A.3.a.2.e,Handling and Moving Objects,0.05,0.0,0.025,PHYS
+4.A.3.a.2.f,Handling and Moving Objects,0.05,0.0,0.025,PHYS
+4.A.3.a.2.g,Handling and Moving Objects,0.05,0.0,0.025,PHYS
+4.A.3.a.2.h,Handling and Moving Objects,0.1,0.0,0.05,PHYS
+4.A.3.a.2.i,Handling and Moving Objects,0.15,0.0,0.075,PHYS
+4.A.3.a.2.j,Handling and Moving Objects,0.05,0.0,0.025,PHYS
+4.A.3.a.2.k,Handling and Moving Objects,0.05,0.0,0.025,PHYS
+4.A.3.a.2.l,Handling and Moving Objects,0.05,0.0,0.025,PHYS
+4.A.3.a.2.m,Handling and Moving Objects,0.05,0.0,0.025,PHYS
+4.A.3.a.2.n,Handling and Moving Objects,0.05,0.0,0.025,PHYS
+4.A.3.a.2.o,Handling and Moving Objects,0.05,0.0,0.025,PHYS
+4.A.3.a.2.p,Handling and Moving Objects,0.05,0.0,0.025,PHYS
+4.A.3.a.2.q,Handling and Moving Objects,0.1,0.0,0.05,PHYS
+4.A.3.a.2.r,Handling and Moving Objects,0.1,0.0,0.05,PHYS
+4.A.3.a.2.s,Handling and Moving Objects,0.05,0.0,0.025,PHYS
+4.A.3.a.2.t,Handling and Moving Objects,0.05,0.0,0.025,PHYS
+4.A.3.a.2.u,Handling and Moving Objects,0.05,0.0,0.025,CARE
+4.A.3.a.2.v,Handling and Moving Objects,0.05,0.0,0.025,PHYS
+4.A.3.a.2.w,Handling and Moving Objects,0.05,0.0,0.025,PHYS
+4.A.3.a.2.x,Handling and Moving Objects,0.1,0.0,0.05,PHYS
+4.A.3.a.2.y,Handling and Moving Objects,0.05,0.0,0.025,PHYS
+4.A.3.a.2.z,Handling and Moving Objects,0.0,0.0,0.0,PHYS
+4.A.3.a.2.aa,Handling and Moving Objects,0.05,0.0,0.025,PHYS
+4.A.3.a.2.ab,Handling and Moving Objects,0.05,0.0,0.025,PHYS
+4.A.3.a.2.ac,Handling and Moving Objects,0.05,0.0,0.025,PHYS
+4.A.3.a.2.ad,Handling and Moving Objects,0.05,0.0,0.025,PHYS
+4.A.3.a.2.ae,Handling and Moving Objects,0.05,0.0,0.025,PHYS
+4.A.3.a.2.af,Handling and Moving Objects,0.05,0.0,0.025,PHYS
+4.A.3.a.2.ag,Handling and Moving Objects,0.05,0.0,0.025,PHYS
+4.A.3.a.2.ah,Handling and Moving Objects,0.05,0.0,0.025,PHYS
+4.A.3.a.2.ai,Handling and Moving Objects,0.05,0.0,0.025,PHYS
+4.A.3.a.2.aj,Handling and Moving Objects,0.05,0.0,0.025,PHYS
+4.A.3.a.2.ak,Handling and Moving Objects,0.05,0.0,0.025,PHYS
+4.A.3.a.2.al,Handling and Moving Objects,0.1,0.0,0.05,PHYS
+4.A.3.a.2.am,Handling and Moving Objects,0.05,0.0,0.025,PHYS
+4.A.3.a.2.an,Handling and Moving Objects,0.05,0.0,0.025,PHYS
+4.A.3.a.2.ao,Handling and Moving Objects,0.05,0.0,0.025,PHYS
+4.A.3.a.2.ap,Handling and Moving Objects,0.05,0.0,0.025,PHYS
+4.A.3.a.2.aq,Handling and Moving Objects,0.05,0.0,0.025,PHYS
+4.A.3.a.2.ar,Handling and Moving Objects,0.0,0.0,0.0,PHYS
+4.A.3.a.2.as,Handling and Moving Objects,0.05,0.0,0.025,PHYS
+4.A.3.a.2.at,Handling and Moving Objects,0.05,0.0,0.025,PHYS
+4.A.3.a.2.au,Handling and Moving Objects,0.1,0.0,0.05,PHYS
+4.A.3.a.3.a,Controlling Machines and Processes,0.4,0.1445,0.2723,MACH
+4.A.3.a.3.b,Controlling Machines and Processes,0.2,0.1445,0.1723,MACH
+4.A.3.a.3.c,Controlling Machines and Processes,0.1,0.1445,0.1223,MACH
+4.A.3.a.3.d,Controlling Machines and Processes,0.15,0.1445,0.1473,MACH
+4.A.3.a.3.e,Controlling Machines and Processes,0.35,0.1445,0.2473,MACH
+4.A.3.a.3.f,Controlling Machines and Processes,0.15,0.1445,0.1473,MACH
+4.A.3.a.3.g,Controlling Machines and Processes,0.2,0.1445,0.1723,MACH
+4.A.3.a.3.h,Controlling Machines and Processes,0.05,0.1445,0.0973,MACH
+4.A.3.a.3.i,Controlling Machines and Processes,0.2,0.1445,0.1723,MACH
+4.A.3.a.3.j,Controlling Machines and Processes,0.4,0.1445,0.2723,MACH
+4.A.3.a.3.k,Controlling Machines and Processes,0.1,0.1445,0.1223,MACH
+4.A.3.a.3.l,Controlling Machines and Processes,0.05,0.1445,0.0973,MACH
+4.A.3.a.4.a,"Operating Vehicles, Mechanized Devices, or Equipment",0.15,0.2369,0.1934,MACH
+4.A.3.b.1.a,Working with Computers,0.95,0.6777,0.8139,TECH
+4.A.3.b.1.b,Working with Computers,0.8,0.6777,0.7389,TECH
+4.A.3.b.1.c,Working with Computers,0.7,0.6777,0.6889,TECH
+4.A.3.b.1.d,Working with Computers,0.8,0.6777,0.7389,TECH
+4.A.3.b.1.e,Working with Computers,0.75,0.6777,0.7139,TECH
+4.A.3.b.1.f,Working with Computers,0.95,0.6777,0.8139,TECH
+4.A.3.b.2.a,"Drafting, Laying Out, and Specifying Technical Devices, Parts, and Equipment",0.85,0.582,0.716,TECH
+4.A.3.b.2.b,"Drafting, Laying Out, and Specifying Technical Devices, Parts, and Equipment",0.7,0.582,0.641,CRTV
+4.A.3.b.2.c,"Drafting, Laying Out, and Specifying Technical Devices, Parts, and Equipment",0.7,0.582,0.641,CRTV
+4.A.3.b.2.d,"Drafting, Laying Out, and Specifying Technical Devices, Parts, and Equipment",0.85,0.582,0.716,TECH
+4.A.3.b.2.e,"Drafting, Laying Out, and Specifying Technical Devices, Parts, and Equipment",0.75,0.582,0.666,CRTV
+4.A.3.b.2.f,"Drafting, Laying Out, and Specifying Technical Devices, Parts, and Equipment",0.8,0.582,0.691,TECH
+4.A.3.b.4.a,Repairing and Maintaining Mechanical Equipment,0.1,0.3528,0.2264,PHYS
+4.A.3.b.4.b,Repairing and Maintaining Mechanical Equipment,0.05,0.3528,0.2014,PHYS
+4.A.3.b.4.c,Repairing and Maintaining Mechanical Equipment,0.05,0.3528,0.2014,PHYS
+4.A.3.b.4.d,Repairing and Maintaining Mechanical Equipment,0.05,0.3528,0.2014,PHYS
+4.A.3.b.4.e,Repairing and Maintaining Mechanical Equipment,0.05,0.3528,0.2014,PHYS
+4.A.3.b.4.f,Repairing and Maintaining Mechanical Equipment,0.1,0.3528,0.2264,PHYS
+4.A.3.b.5.a,Repairing and Maintaining Electronic Equipment,0.1,0.3579,0.229,PHYS
+4.A.3.b.5.b,Repairing and Maintaining Electronic Equipment,0.1,0.3579,0.229,PHYS
+4.A.3.b.5.c,Repairing and Maintaining Electronic Equipment,0.15,0.3579,0.254,PHYS
+4.A.3.b.6.a,Documenting/Recording Information,0.95,0.5272,0.7386,INFO
+4.A.3.b.6.b,Documenting/Recording Information,0.9,0.5272,0.7136,INFO
+4.A.3.b.6.c,Documenting/Recording Information,0.65,0.5272,0.5886,SOCL
+4.A.3.b.6.d,Documenting/Recording Information,0.85,0.5272,0.6886,INFO
+4.A.3.b.6.e,Documenting/Recording Information,0.25,0.5272,0.3886,PHYS
+4.A.3.b.6.f,Documenting/Recording Information,0.9,0.5272,0.7136,INFO
+4.A.3.b.6.g,Documenting/Recording Information,0.9,0.5272,0.7136,INFO
+4.A.3.b.6.h,Documenting/Recording Information,0.9,0.5272,0.7136,INFO
+4.A.3.b.6.i,Documenting/Recording Information,0.9,0.5272,0.7136,INFO
+4.A.3.b.6.j,Documenting/Recording Information,0.9,0.5272,0.7136,INFO
+4.A.3.b.6.k,Documenting/Recording Information,0.9,0.5272,0.7136,INFO
+4.A.3.b.6.l,Documenting/Recording Information,0.9,0.5272,0.7136,INFO
+4.A.3.b.6.m,Documenting/Recording Information,0.9,0.5272,0.7136,INFO
+4.A.3.b.6.n,Documenting/Recording Information,0.9,0.5272,0.7136,INFO
+4.A.3.b.6.o,Documenting/Recording Information,0.9,0.5272,0.7136,INFO
+4.A.3.b.6.p,Documenting/Recording Information,0.9,0.5272,0.7136,CRTV
+4.A.4.a.1.a,Interpreting the Meaning of Information for Others,0.75,0.6477,0.6989,SOCL
+4.A.4.a.1.b,Interpreting the Meaning of Information for Others,0.8,0.6477,0.7239,SOCL
+4.A.4.a.1.c,Interpreting the Meaning of Information for Others,0.8,0.6477,0.7239,SOCL
+4.A.4.a.1.d,Interpreting the Meaning of Information for Others,0.8,0.6477,0.7239,SOCL
+4.A.4.a.1.e,Interpreting the Meaning of Information for Others,0.55,0.6477,0.5989,CARE
+4.A.4.a.2.a,"Communicating with Supervisors, Peers, or Subordinates",0.6,0.609,0.6045,SOCL
+4.A.4.a.2.b,"Communicating with Supervisors, Peers, or Subordinates",0.7,0.609,0.6545,SOCL
+4.A.4.a.2.c,"Communicating with Supervisors, Peers, or Subordinates",0.55,0.609,0.5795,SOCL
+4.A.4.a.2.d,"Communicating with Supervisors, Peers, or Subordinates",0.45,0.609,0.5295,CARE
+4.A.4.a.2.e,"Communicating with Supervisors, Peers, or Subordinates",0.55,0.609,0.5795,SOCL
+4.A.4.a.2.f,"Communicating with Supervisors, Peers, or Subordinates",0.55,0.609,0.5795,SOCL
+4.A.4.a.2.g,"Communicating with Supervisors, Peers, or Subordinates",0.6,0.609,0.6045,SOCL
+4.A.4.a.2.h,"Communicating with Supervisors, Peers, or Subordinates",0.6,0.609,0.6045,SOCL
+4.A.4.a.2.i,"Communicating with Supervisors, Peers, or Subordinates",0.5,0.609,0.5545,SOCL
+4.A.4.a.2.j,"Communicating with Supervisors, Peers, or Subordinates",0.55,0.609,0.5795,SOCL
+4.A.4.a.3.a,Communicating with People Outside the Organization,0.3,0.609,0.4545,SOCL
+4.A.4.a.3.b,Communicating with People Outside the Organization,0.7,0.609,0.6545,SOCL
+4.A.4.a.3.c,Communicating with People Outside the Organization,0.65,0.609,0.6295,SOCL
+4.A.4.a.4.a,Establishing and Maintaining Interpersonal Relationships,0.25,0.5384,0.3942,SOCL
+4.A.4.a.5.a,Assisting and Caring for Others,0.55,0.5834,0.5667,SOCL
+4.A.4.a.5.b,Assisting and Caring for Others,0.1,0.5834,0.3417,CARE
+4.A.4.a.5.c,Assisting and Caring for Others,0.05,0.5834,0.3167,CARE
+4.A.4.a.5.d,Assisting and Caring for Others,0.05,0.5834,0.3167,CARE
+4.A.4.a.5.e,Assisting and Caring for Others,0.15,0.5834,0.3667,CARE
+4.A.4.a.5.f,Assisting and Caring for Others,0.1,0.5834,0.3417,CARE
+4.A.4.a.5.g,Assisting and Caring for Others,0.05,0.5834,0.3167,CARE
+4.A.4.a.5.h,Assisting and Caring for Others,0.8,0.5834,0.6917,INFO
+4.A.4.a.5.i,Assisting and Caring for Others,0.15,0.5834,0.3667,CARE
+4.A.4.a.5.j,Assisting and Caring for Others,0.3,0.5834,0.4417,SOCL
+4.A.4.a.5.k,Assisting and Caring for Others,0.05,0.5834,0.3167,CARE
+4.A.4.a.5.l,Assisting and Caring for Others,0.1,0.5834,0.3417,CARE
+4.A.4.a.6.a,Selling or Influencing Others,0.5,0.5439,0.522,SOCL
+4.A.4.a.6.b,Selling or Influencing Others,0.45,0.5439,0.497,SOCL
+4.A.4.a.6.c,Selling or Influencing Others,0.65,0.5439,0.597,SOCL
+4.A.4.a.7.a,Resolving Conflicts and Negotiating with Others,0.35,0.601,0.4755,SOCL
+4.A.4.a.7.b,Resolving Conflicts and Negotiating with Others,0.5,0.601,0.5505,SOCL
+4.A.4.a.7.c,Resolving Conflicts and Negotiating with Others,0.5,0.601,0.5505,MGMT
+4.A.4.a.8.a,Performing for or Working Directly with the Public,0.15,0.6263,0.3882,CRTV
+4.A.4.a.8.b,Performing for or Working Directly with the Public,0.2,0.6263,0.4132,SOCL
+4.A.4.a.8.c,Performing for or Working Directly with the Public,0.75,0.6263,0.6882,SOCL
+4.A.4.b.1.a,Coordinating the Work and Activities of Others,0.55,0.5876,0.5688,MGMT
+4.A.4.b.1.b,Coordinating the Work and Activities of Others,0.15,0.5876,0.3688,PHYS
+4.A.4.b.1.c,Coordinating the Work and Activities of Others,0.55,0.5876,0.5688,MGMT
+4.A.4.b.1.d,Coordinating the Work and Activities of Others,0.45,0.5876,0.5188,MGMT
+4.A.4.b.1.e,Coordinating the Work and Activities of Others,0.45,0.5876,0.5188,MGMT
+4.A.4.b.1.f,Coordinating the Work and Activities of Others,0.65,0.5876,0.6188,MGMT
+4.A.4.b.1.g,Coordinating the Work and Activities of Others,0.65,0.5876,0.6188,MGMT
+4.A.4.b.2.a,Developing and Building Teams,0.3,0.5114,0.4057,SOCL
+4.A.4.b.3.a,Training and Teaching Others,0.4,0.6214,0.5107,SOCL
+4.A.4.b.3.b,Training and Teaching Others,0.55,0.6214,0.5857,SOCL
+4.A.4.b.3.c,Training and Teaching Others,0.55,0.6214,0.5857,SOCL
+4.A.4.b.3.d,Training and Teaching Others,0.55,0.6214,0.5857,SOCL
+4.A.4.b.3.e,Training and Teaching Others,0.45,0.6214,0.5357,SOCL
+4.A.4.b.3.f,Training and Teaching Others,0.5,0.6214,0.5607,SOCL
+4.A.4.b.4.a,"Guiding, Directing, and Motivating Subordinates",0.35,0.5098,0.4299,MGMT
+4.A.4.b.4.b,"Guiding, Directing, and Motivating Subordinates",0.4,0.5098,0.4549,MGMT
+4.A.4.b.4.c,"Guiding, Directing, and Motivating Subordinates",0.35,0.5098,0.4299,MGMT
+4.A.4.b.4.d,"Guiding, Directing, and Motivating Subordinates",0.15,0.5098,0.3299,MGMT
+4.A.4.b.4.e,"Guiding, Directing, and Motivating Subordinates",0.55,0.5098,0.5299,MGMT
+4.A.4.b.4.f,"Guiding, Directing, and Motivating Subordinates",0.55,0.5098,0.5299,MGMT
+4.A.4.b.4.g,"Guiding, Directing, and Motivating Subordinates",0.55,0.5098,0.5299,MGMT
+4.A.4.b.4.h,"Guiding, Directing, and Motivating Subordinates",0.7,0.5098,0.6049,MGMT
+4.A.4.b.4.i,"Guiding, Directing, and Motivating Subordinates",0.25,0.5098,0.3799,MGMT
+4.A.4.b.4.j,"Guiding, Directing, and Motivating Subordinates",0.5,0.5098,0.5049,MGMT
+4.A.4.b.4.k,"Guiding, Directing, and Motivating Subordinates",0.3,0.5098,0.4049,MGMT
+4.A.4.b.4.l,"Guiding, Directing, and Motivating Subordinates",0.55,0.5098,0.5299,MGMT
+4.A.4.b.5.a,Coaching and Developing Others,0.35,0.5188,0.4344,SOCL
+4.A.4.b.6.a,Providing Consultation and Advice to Others,0.5,0.5803,0.5402,CARE
+4.A.4.b.6.b,Providing Consultation and Advice to Others,0.65,0.5803,0.6152,SOCL
+4.A.4.b.6.c,Providing Consultation and Advice to Others,0.7,0.5803,0.6402,SOCL
+4.A.4.b.6.d,Providing Consultation and Advice to Others,0.75,0.5803,0.6652,SOCL
+4.A.4.b.6.e,Providing Consultation and Advice to Others,0.7,0.5803,0.6402,SOCL
+4.A.4.b.6.f,Providing Consultation and Advice to Others,0.55,0.5803,0.5652,CARE
+4.A.4.b.6.g,Providing Consultation and Advice to Others,0.6,0.5803,0.5902,SOCL
+4.A.4.b.6.h,Providing Consultation and Advice to Others,0.7,0.5803,0.6402,SOCL
+4.A.4.b.6.i,Providing Consultation and Advice to Others,0.6,0.5803,0.5902,SOCL
+4.A.4.b.6.j,Providing Consultation and Advice to Others,0.3,0.5803,0.4402,SOCL
+4.A.4.b.6.k,Providing Consultation and Advice to Others,0.7,0.5803,0.6402,SOCL
+4.A.4.c.1.a,Performing Administrative Activities,0.9,0.6485,0.7743,INFO
+4.A.4.c.1.b,Performing Administrative Activities,0.8,0.6485,0.7243,INFO
+4.A.4.c.1.c,Performing Administrative Activities,0.85,0.6485,0.7493,INFO
+4.A.4.c.1.d,Performing Administrative Activities,0.85,0.6485,0.7493,INFO
+4.A.4.c.1.e,Performing Administrative Activities,0.2,0.6485,0.4243,PHYS
+4.A.4.c.1.f,Performing Administrative Activities,0.35,0.6485,0.4993,PHYS
+4.A.4.c.2.a,Staffing Organizational Units,0.6,0.6326,0.6163,MGMT
+4.A.4.c.2.b,Staffing Organizational Units,0.7,0.6326,0.6663,MGMT
+4.A.4.c.3.a,Monitoring and Controlling Resources,0.35,0.636,0.493,PHYS
+4.A.4.c.3.b,Monitoring and Controlling Resources,0.6,0.636,0.618,CARE
+4.A.4.c.3.c,Monitoring and Controlling Resources,0.15,0.636,0.393,PHYS
+4.A.4.c.3.d,Monitoring and Controlling Resources,0.55,0.636,0.593,INFO
+4.A.4.c.3.e,Monitoring and Controlling Resources,0.7,0.636,0.668,INFO
+4.A.4.c.3.f,Monitoring and Controlling Resources,0.5,0.636,0.568,CARE
+4.A.4.c.3.g,Monitoring and Controlling Resources,0.75,0.636,0.693,INFO
