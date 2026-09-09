@@ -1,0 +1,8 @@
+rule_id,pattern,tradeoff
+apply,\bapply\b,Also matches applying principles or computer methods
+movement,\b(?:lift|carry|climb|walk|run|kneel|bend|crawl|stand|swim)\b,Run and stand can describe nonphysical work
+handling,\b(?:assemble|install|repair|clean|wash|cut|drill|weld|paint|load|unload|pack)\b,Can match software installation or data handling
+operation,\b(?:drive|steer|operate|transport)\b,Operate can describe computer systems
+body_care,\b(?:dress|bathe|feed|massage|groom|exercise)\b,Feed and exercise can have abstract meanings
+posing,\bpose\s+(?:for|as)\b,May match nonphysical uses of pose as
+physical_objects,\b(?:garments|makeup|make-up|hair|surgical|machinery|hand tools)\b,Object mentions do not establish physical execution

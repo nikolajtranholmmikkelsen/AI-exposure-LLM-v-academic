@@ -89,6 +89,8 @@ I assign the same score to all DWAs within an IWA. Task ratings can lag changes 
 
 I also set tasks linked to selected physical O*NET activity categories to zero, keeping their weights. A narrow rule covers physical activities and handling objects; a broad rule adds machines and vehicles. Spearman correlations with AIOE are 0.8857 and 0.8841, versus 0.8851 originally, on the same 683 occupations. Models remains at 0.6155 because its posing and styling tasks map to a promotional category. See the [rules, audit files, and comparison plot](results/robustness/README.md).
 
+I add a separate [task-language check](results/text_robustness/README.md), with a published pattern list and every match exported. Text alone gives Spearman 0.8850; combined with the broad hierarchy it gives 0.8833. I accept false positives such as “apply” in computer-based tasks and false negatives from unlisted wording. I chose these exploratory rules after inspecting Models, so its decline to 0.2879 does not validate them.
+
 ## Project structure
 
 ```text
@@ -102,11 +104,13 @@ scripts/
   03_results.py          Summary statistics and HTML reports
   04_figure.py           Task exposure versus AIOE scatter plot
   05_physical_robustness.py  Physical-task override sensitivity checks
+  06_text_robustness.py   Physical-language sensitivity checks
 results/
   task/                  Task model tables and Job Zone summary
   hybrid/                Hybrid scores and matched comparison
   reports/               Two self-contained HTML reports
   robustness/            Physical-task override estimates, audit, and figure
+  text_robustness/        Text-rule estimates, match audit, and figure
   summary.csv            Headline statistics
 ```
 
@@ -125,6 +129,7 @@ python scripts/02_hybrid_exposure.py
 python scripts/03_results.py
 python scripts/04_figure.py
 python scripts/05_physical_robustness.py
+python scripts/06_text_robustness.py
 ```
 
 On Windows, activate with `.venv\Scripts\activate`. Run scripts in numerical order. They read local inputs and overwrite their outputs, with no API keys or network calls. CSV estimates use four decimal places; summary statistics use those saved estimates.
